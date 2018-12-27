@@ -1,0 +1,31 @@
+.button {
+  background-color: $orange;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 200;
+  line-height: 1;
+  padding: $m-size;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
+
+  &:hover {
+    background-color: transparent;
+    color: $light-orange;
+  }
+
+  &--light-grey {
+    @extend .button;
+    background-color: $light-grey;
+
+    &:hover {
+      color: $light-grey;
+    }
+  }
+
+  &--link {
+    background-color: transparent;
+  }
+}
